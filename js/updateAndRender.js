@@ -211,6 +211,7 @@ function restart(){
 	healthPower = [];
 	badDudes = [];
 	badDudes2 = [];
+	breakables = [];
 //declare randomness
 	runPowerLocX = Math.floor((Math.random() * (gridWidth - 1)) + 1);
 	runPowerLocY = Math.floor((Math.random() * (gridHeight - 1)) + 1);
@@ -233,6 +234,8 @@ function restart(){
 	};
 	bulxPos = mySprite.x + (0.444 * spriteSizes);
 	bulyPos = mySprite.y + (0.388 * spriteSizes);
+//recreate breakables
+	createBreakables();
 }
 
 function spitBullets(){

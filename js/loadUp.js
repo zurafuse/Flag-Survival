@@ -19,11 +19,6 @@ var sprtHtControl = canvas.width / gridWidth;
 
 canvas.height = sprtHtControl * gridHeight;
 
-if (window.innerWidth < window.innerHeight)
-{
-	canvas.height = canvas.height * 2;
-}
-
 //images
 var img = new Image();
 var img2 = new Image();
